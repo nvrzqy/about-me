@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art - Drawings and Paintings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>nvrzqy's space ✨</h1>
+    <nav>
+      <a href="index.html">About Me</a>
+      <a href="myworks.html">My Works</a>
+      <a href="art.html" class="active">Art</a>
+    </nav>
+  </header>
+<main>
+  <section>
+    <h2 class="center-text">My works</h2>
+    <div class="card">
+        <p class="center-text">In my free time, i like to draw, both traditionally and digitally. I started off painting traditionally but now i do digital painting a lot more (one of the reason because it's cheaper and i dont have to buy paint) but i still like to do sketch with a pencil and a paper🎨<br><br>I draw a lot, so i won't show you all of them and here's just a few that i like, and if you want to see more you can click <a href="https://sites.google.com/view/nvrzqy/art">here</a></i></p></div>
+  </section>
+<div class="card">
+  <section class="gallery">
+    <div class="gallery-grid">
+      <img src="images/watermelon.png" alt="Art 1">
+      <img src="images/person.png" alt="Art 2">
+      <img src="images/owl.png" alt="Art 3">
+      <img src="images/eggg.png" alt="Art 4">
+      <img src="images/universe.png" alt="Art 5">
+      <img src="images/sketch.jpeg" alt="Art 6">
+    </div></div>
+  </section>
+</main>
+  <footer>
+    <p>Contact me:</p>
+    <p>
+      <a href="mailto:nvrzqy@example.com">Email</a> |
+      <a href="https://instagram.com/azalianoverizqy" target="_blank">Instagram</a> |
+      <a href="https://github.com/nvrzqy" target="_blank">GitHub</a>
+    </p>
+    <p>&copy; 2025 nvrzqy. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const elements = document.querySelectorAll('.gallery-grid img, .hero h2, .hero p');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
+  <link rel="stylesheet" href="style.css">
+</body>
+</html>
